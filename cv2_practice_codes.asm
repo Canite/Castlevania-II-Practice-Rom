@@ -243,7 +243,7 @@ CycleVar:
         CPX #$01
         BEQ LoadX
         CPX #$02
-        BEQ LoadY
+        BEQ LoadCamX
         CPX #$03
         BEQ LoadFrame
 
@@ -254,12 +254,12 @@ LoadSubPx:
         STA $D2
         BNE ResetCycle
 
-LoadY:
-        LDA #$03
-        STA $D2
-        LDA #$24
+LoadCamX:
+        LDA #$53
         STA $D1
-        BNE ResetCycle
+        LDA #$00
+        STA $D2
+        BEQ ResetCycle
 
 LoadFrame:
         LDA #$00
