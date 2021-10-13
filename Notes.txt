@@ -7,7 +7,7 @@ $0082 = Day/night boolean
 $0046 - $0047 = Exp
 $008B = level
 $0053 = Camera offset?
-$018A = X offset
+$018A = Y offset
 $0033 = top/bottom in menu?
 $0725 - $0728 = maybe items
 $004A = items
@@ -61,6 +61,9 @@ $FBD2 - $FBFF
 $FEE1 - $FFCF
 
 $2080 - $2082 = top left of screen in ppu?
+
+$42B5 is the RNG check for heart drop
+$7185 is the RNG check for blob jump height
 
 $0444,X and $0468,X and $0456,X
 jump state - jump delay - jump height
